@@ -958,3 +958,45 @@
     order: 1;
   }
 }
+
+
+/* IW Custom Theme - based on radix */
+html {
+  background-color: var(--gray1) !important;
+}
+
+div, a, p, h1, h2, h3 {
+  font-family: 'Noto Sans Display', sans-serif !important;
+}
+
+h2 {
+  color: var(--gray12) !important;
+  font-weight: 700 !important;
+}
+
+button {
+  background-color: #0575E6 !important;
+  font-weight: 700 !important;
+}
+
+input {
+  border-color: var(--gray6) !important;
+  background-color: var(--gray2) !important;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: var(--gray9);
+}
+
+img {
+  display: block;
+  width: 150px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: -50px;
+  opacity: 0.4;
+}
+

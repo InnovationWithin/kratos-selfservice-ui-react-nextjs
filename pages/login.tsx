@@ -5,10 +5,10 @@ import {
 import { CardTitle } from '@ory/themes'
 import { AxiosError } from 'axios'
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { Header } from '../components/header'
 
 import {
   ActionCard,
@@ -102,10 +102,8 @@ const Login: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Sign in - Ory NextJS Integration Example</title>
-        <meta name="description" content="NextJS + React + Vercel + Ory" />
-      </Head>
+      <Header />
+      <img src="https://cdn.innovationwithin.com/logo%20grey.png" />
       <MarginCard>
         <CardTitle>
           {(() => {
@@ -114,7 +112,7 @@ const Login: NextPage = () => {
             } else if (flow?.requested_aal === 'aal2') {
               return 'Two-Factor Authentication'
             }
-            return 'Sign In'
+            return 'Login Required'
           })()}
         </CardTitle>
         <Flow onSubmit={onSubmit} flow={flow} />

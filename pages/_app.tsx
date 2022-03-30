@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle((props: ThemeProps) =>
   globalStyles(props)
 )
 
-function MyApp({ Component, pageProps }: AppProps) {
+function LoginApp({ Component, pageProps }: AppProps) {
   return (
     <div data-testid="app-react">
       <ThemeProvider theme={theme}>
@@ -22,4 +22,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default LoginApp

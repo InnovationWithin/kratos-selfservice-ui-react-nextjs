@@ -10,10 +10,19 @@ import styled from 'styled-components'
 export const MarginCard = styled(Card)`
   margin-top: 70px;
   margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--gray6);
+  border-top: 5px solid #021B79;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+  background-color: var(--gray2) !important;
 `
 
 export const ActionCard = styled(Card)`
   margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--gray7);
+  background-color: var(--gray2) !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 13px -3px, rgba(0, 0, 0, 0.05) 0px -3px 0px inset;
 `
 
 export const CenterLink = styled.a`
@@ -21,6 +30,17 @@ export const CenterLink = styled.a`
   ${typographyLinkStyles};
   text-align: center;
   font-size: 15px;
+  color: var(--gray12);
+
+  &:focus, &:active, &:visited {
+    color: var(--gray11);
+  }
+
+  &:hover {
+    color: var(--gray11);
+  }
+
+
 `
 
 export const TextLeftButton = styled(LinkButton)`
