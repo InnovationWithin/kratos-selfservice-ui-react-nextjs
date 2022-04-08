@@ -14,7 +14,6 @@ export const MarginCard = styled(Card)`
   border: 1px solid var(--gray6);
   border-top: 5px solid #021B79;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
-  background-color: var(--gray2) !important;
 `
 
 export const ActionCard = styled(Card)`
