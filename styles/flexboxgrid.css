@@ -963,6 +963,8 @@
 /* IW Custom Theme - based on radix */
 html {
   background-color: var(--gray1) !important;
+  display: block !important;
+  height: 100vh !important;
 }
 
 div, a, p, h1, h2, h3 {
