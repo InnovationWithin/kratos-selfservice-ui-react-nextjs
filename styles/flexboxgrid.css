@@ -967,6 +967,10 @@ html {
   height: 100vh !important;
 }
 
+body {
+  background-color: transparent !important;
+}
+
 div, a, p, h1, h2, h3 {
   font-family: 'Noto Sans Display', sans-serif !important;
 }
